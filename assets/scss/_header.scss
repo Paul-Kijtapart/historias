@@ -1,0 +1,50 @@
+#header {
+    @include container;
+    @include clearfix;
+
+    background-color: white;
+    color: black;
+    height: 500px;
+
+    .navbar {
+        @include span(full);
+        @include clearfix;
+
+        height: 100px;
+
+        #mainLogo {
+            @include span(4 of 12 first);
+        }
+
+        ul {
+            @include span(6 of 12 last);
+
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+
+                @include span(1.5 of 6);
+
+                &:last-child {
+                    @include span(last);
+                }
+            }
+        }
+    }
+
+    #introduction {
+    	@include span(full);
+    	position: relative;
+    	height: 400px;
+
+        #title {
+        	font-size: 68px;
+            clear: both;
+            position: absolute;
+            text-align: center;
+            top: 25%;
+            left: span(3 of 12) + gutter(12);
+        }
+    }
+}
