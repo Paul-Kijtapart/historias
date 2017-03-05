@@ -1,0 +1,61 @@
+// Use Compass
+@import "compass";
+
+// Reset using Normalize
+@import "normalize";
+
+@import "susy";
+
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: split,
+  debug: (
+    image: show,
+    color: rgba(red, 0.5),
+    output: overlay,
+    toggle: top right
+  ),
+);
+
+
+$colorMap: (1: purple, 2: blue, 3: green, 4: yellow);
+
+.container div {
+  height: 200px;
+  border-radius: 10px;
+}
+
+// Loop through each color name, create class name and styles
+@each $colorKey, $value in $colorMap {
+  .color-#{$colorKey} {
+    background-color: rgba($value, 0.7);
+    &:after {
+      content: “variable name is #{$value}”
+    }
+  }
+}
+
+.color-1 {
+  @include span(12);
+}
+.color-2 {
+  @include span(8 of 12);
+  @include push(2);
+}
+.color-3 {
+  @include span(4 of 8);
+  .color-4 {
+    @include span(1 of 4);
+    @include push(1 of 4);
+  }
+  + .color-3 {
+    @include span(4 of 8 omega);
+    .color-4 {
+      @include span(2 of 4);
+      @include push(1 of 4);
+    }
+  }
+}
