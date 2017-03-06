@@ -4,7 +4,7 @@ layout: post
 name: Amelia Yap
 date: 0001-01-01 00:00:00 0000
 categories: team
-picture: http://www.tlcsolutions.ca/wp-content/uploads/Optimized-it-consulting-tlc-solutions-min.jpg
+picture: vanesa_chang.jpg
 description: Amelia manages operations and finance for Development Seed. She does all the behind-the-scenes magic that allows Development Seed to run.
 ---
 
