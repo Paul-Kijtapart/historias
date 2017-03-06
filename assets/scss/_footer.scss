@@ -1,3 +1,42 @@
 footer {
-	
+    @include container(12);
+    @include clearfix;
+    padding-top: 10px;
+
+    background-color: black;
+    color: white;
+
+    button#back_to_top_btn {
+        margin: 0 auto;
+        display: block;
+    }
+
+    ul {
+        @include span(8 of 12);
+        @include clearfix;
+
+        margin-left: span(2 of 12) + gutter(12);
+        list-style-type: none;
+
+        @media screen and ( max-width: 600px) {
+            @include span(12);
+            margin: 0px;
+            padding: 0px;
+        }
+
+        li {
+            @include span(2 of 8);
+
+            text-align: center;
+            border: 1px solid black;
+
+            @media screen and (max-width: 600px) {
+                @include span(8);
+
+                width: 100%;
+                display: block;
+                height: 30px;
+            }
+        }
+    }
 }

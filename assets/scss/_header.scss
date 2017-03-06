@@ -1,40 +1,51 @@
 header {
-    height: 400px;
     background-image: url("../img/tempHeaderImg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 
-    #topNav {
+    .topNav {
         height: 75px;
+        text-align: center;
+
+        .brandTitle {
+            margin-left: 7px;
+            font-size: 23px;
+            font-family: 'Lobster', cursive;
+        }
     }
 
     #mobileTopNav {
-    	margin-top: 50px;
-    	width: 100%;
-    	text-align: center;
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
 
-    	.menu>.item {
-    		height: 30px;
-    	}
+        .menu > .item {
+            height: 30px;
+        }
+    }
+
+    .brandTitle {
+        margin-left: 10px;
+        font-size: 20px;
+        font-family: 'Lobster', cursive;
     }
 
     #introduction {
         clear: both;
         margin-top: 75px;
         height: 300px;
-        display: table-cell;
-        vertical-align: center;
         display: flex;
         justify-content: center;
 
         @media screen and (max-width: 600px) {
-        	margin-top: 50px;
+            margin-top: 50px;
         }
 
         h1 {
-        	color: white;
-        	display: inline-block;
+            color: white;
+            display: inline-block;
             align-self: center;
+            font-size: 48px;
         }
     }
 }
