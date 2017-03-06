@@ -1,15 +1,31 @@
 en:
+  nav:
+    home: 'Home'
+    products: 'Products'
+    farmers: 'Our farmers'
+    about: 'About us'
   home:
     title: 'EN_Historias'
   about:
     title: 'EN_Team'
+    team: 'EN_Our team'
+    contact: 'EN_Contact us'
   farmers:
     title: 'EN_Farmers'
+    partners: 'EN_Our partners'
 
 es:
+  nav:
+    home: 'Inicio'
+    products: 'Productos'
+    farmers: 'Nuestros productores'
+    about: 'Quiénes somos'
   home:
     title: 'ES_Historias'
   about:
     title: 'ES_Team'
+    team: 'ES_Our team'
+    contact: 'ES_Contact us'
   farmers:
     title: 'ES_Farmers'
+    partners: 'ES_Our partners'
