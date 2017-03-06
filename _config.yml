@@ -7,6 +7,7 @@ description: 'Write an awesome description for your new site here. You can edit 
 baseurl: ''
 url: ''
 markdown: kramdown
+gems: [bourbon]
 exclude:
 - Gemfile
 - Gemfile.lock

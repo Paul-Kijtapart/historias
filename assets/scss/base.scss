@@ -25,7 +25,7 @@ $susy: (
 @include global-box-sizing(border-box);
 @import './header';
 @import "team";
-
+@import "timeline";
 
 $colorMap: (1: purple, 2: blue, 3: green, 4: yellow);
 
@@ -44,24 +44,6 @@ $colorMap: (1: purple, 2: blue, 3: green, 4: yellow);
   }
 }
 
-.color-1 {
-  @include span(12);
-}
-.color-2 {
-  @include span(8 of 12);
-  @include push(2);
-}
-.color-3 {
-  @include span(4 of 8);
-  .color-4 {
-    @include span(1 of 4);
-    @include push(1 of 4);
-  }
-  + .color-3 {
-    @include span(4 of 8 omega);
-    .color-4 {
-      @include span(2 of 4);
-      @include push(1 of 4);
-    }
-  }
+#timeline-wrapper {
+  background-color: whitesmoke;
 }
