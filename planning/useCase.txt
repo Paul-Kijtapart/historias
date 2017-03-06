@@ -1,0 +1,7 @@
+Goal: Users can see all the existing farmers 
+1. User visit the Website
+2. 
+
+
+
+

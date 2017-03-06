@@ -21,7 +21,12 @@ $susy: (
   ),
 );
 
+
+@include global-box-sizing(border-box);
+
+@import './header';
 @import "team";
+
 
 $colorMap: (1: purple, 2: blue, 3: green, 4: yellow);
 

@@ -1,0 +1,30 @@
+header {
+    height: 400px;
+
+    #topNav {
+        height: 75px;
+    }
+
+    #mobileTopNav {
+    	margin-top: 50px;
+    	width: 100%;
+    	text-align: center;
+
+    	.menu>.item {
+    		height: 30px;
+    	}
+    }
+
+    #introduction {
+        clear: both;
+        margin-top: 100px;
+        height: 300px;
+        position: relative;
+
+        h1 {
+            position: absolute;
+            left: span(5 of 12) + gutter(12);
+            top: 25%;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+Requirement Lists for About Page:
+1. 
+
+
+
+
+
+Requirement List for Farmer Page:
+1. 
+
+
+
+
+Main Priorities:
+1. Multi-lingual
+2. Contact Page
+3. Stories of each farmer
