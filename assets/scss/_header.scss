@@ -1,5 +1,8 @@
 header {
     height: 400px;
+    background-image: url("../img/tempHeaderImg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 
     #topNav {
         height: 75px;
@@ -17,18 +20,19 @@ header {
 
     #introduction {
         clear: both;
-        margin-top: 75px; // TODO: different for different screen
+        margin-top: 75px;
         height: 300px;
         display: table-cell;
         vertical-align: center;
         display: flex;
         justify-content: center;
 
-        @media screen and (max-width: 650px) {
+        @media screen and (max-width: 600px) {
         	margin-top: 50px;
         }
 
         h1 {
+        	color: white;
         	display: inline-block;
             align-self: center;
         }
