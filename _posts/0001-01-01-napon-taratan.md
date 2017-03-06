@@ -4,7 +4,7 @@ layout: post
 name: Napon Taratan
 date: 0001-01-01 00:00:00 0000
 categories: team
-picture: https://www.kreditech.com/wp-content/uploads/2015/09/Alexander-Graubner-M%C3%BCller-CTO_Founder_1.jpg
+picture: vanesa_chang.jpg
 description: Napon ensures the farmers have access to high-speed internet.
 ---
 
