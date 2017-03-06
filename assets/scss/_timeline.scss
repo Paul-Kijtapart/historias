@@ -69,27 +69,6 @@ Main components
 
 -------------------------------- */
 
-// header {
-// 	height: 200px;
-// 	line-height: 200px;
-// 	text-align: center;
-// 	background: $color-1;
-
-// 	h1 {
-// 		color: $color-3;
-// 		@include font-size(18px);
-// 	}
-
-// 	@include MQ(L) {
-// 		height: 300px;
-// 		line-height: 300px;
-
-// 		h1 {
-// 			@include font-size(24px);
-// 		}
-// 	}
-// }
-
 #cd-timeline {
 	position: relative;
 	padding: 2em 0;
@@ -168,16 +147,24 @@ Main components
 		margin-top: -12px;
 	}
 
-	&.cd-picture {
+	&.cd-home {
 		background: $color-4;
 	}
 
-	&.cd-movie {
+	&.cd-heart {
 		background: $color-2;
 	}
 
 	&.cd-location {
 		background: $color-5;
+	}
+
+	&.cd-sign {
+		background: $color-6;
+	}
+
+	&.cd-board {
+		background: $color-1;
 	}
 
 	@include MQ(L) {
