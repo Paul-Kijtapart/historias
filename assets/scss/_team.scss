@@ -1,0 +1,40 @@
+    * {
+      box-sizing: border-box;
+    }
+
+    section {
+      margin: 0 auto;
+      // background-color: whitesmoke;
+      max-width: 933px;
+      margin-bottom: 5rem;
+      margin-top: 5rem;
+    }
+
+    .section {
+      margin: 0 auto;
+      max-width: 933px;
+      margin-bottom: 5rem;
+      margin-top: 5rem;
+    }
+
+    .ui.cards >.card  {
+      width: 210px;
+    }
+
+    .ui.cards > .card > .content > .header:not(.ui) {
+      font-size: 1.1em;
+      font-weight: normal;
+    }
+
+    .ui.cards > .card .meta,
+    .ui.card .meta {
+      font-size: 0.8em;
+    }
+
+    #album_items .ui.cards {
+      margin: 10px;
+    }
+
+    section > .ui .form {
+      margin: 3rem;
+    }
