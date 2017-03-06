@@ -1,0 +1,15 @@
+en:
+  home:
+    title: 'EN_Historias'
+  about:
+    title: 'EN_Team'
+  farmers:
+    title: 'EN_Farmers'
+
+es:
+  home:
+    title: 'ES_Historias'
+  about:
+    title: 'ES_Team'
+  farmers:
+    title: 'ES_Farmers'
