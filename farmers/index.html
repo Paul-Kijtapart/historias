@@ -1,11 +1,31 @@
 ---
 layout: default
 category: farmer
+title: Our community
 ---
-<h1>FARMERS</h1>
+<h2 class="ui center aligned icon header">
+  <i class="circular leaf icon"></i>
+  Our Partners
+</h2>
 
+<section>
+<div id="album_items">
+<div class="ui cards">
 {% for post in site.posts %}
   {% if post.categories contains page.category %}
-    <p>{{post.name}}</p>
+    <div class="card">
+      <div class="image">
+        <img src="{{post.picture}}">
+      </div>
+      <div class="content">
+        <a class="header">{{post.name}}</a>
+        <div class="meta">
+          <span class="date">{{post.product}}</span>
+        </div>
+      </div>
+    </div>
   {% endif %}
 {% endfor %}
+</div>
+</div>
+</section>
