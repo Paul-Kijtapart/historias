@@ -1,40 +1,44 @@
-    * {
-      box-sizing: border-box;
-    }
+* {
+  box-sizing: border-box;
+}
 
-    section {
-      margin: 0 auto;
-      // background-color: whitesmoke;
-      max-width: 933px;
-      margin-bottom: 5rem;
-      margin-top: 5rem;
-    }
+section {
+  margin: 0 auto;
+  max-width: 933px;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
 
-    .section {
-      margin: 0 auto;
-      max-width: 933px;
-      margin-bottom: 5rem;
-      margin-top: 5rem;
-    }
+@media (max-width: 950px) {
+  section {
+    max-width: 630px;
+  }
+}
 
-    .ui.cards >.card  {
-      width: 210px;
-    }
+@media (max-width: 650px) {
+  section {
+    max-width: 330px;
+  }
+}
 
-    .ui.cards > .card > .content > .header:not(.ui) {
-      font-size: 1.1em;
-      font-weight: normal;
-    }
+.ui.cards >.card  {
+  width: 210px;
+}
 
-    .ui.cards > .card .meta,
-    .ui.card .meta {
-      font-size: 0.8em;
-    }
+.ui.cards > .card > .content > .header:not(.ui) {
+  font-size: 1.1em;
+  font-weight: normal;
+}
 
-    #album_items .ui.cards {
-      margin: 10px;
-    }
+.ui.cards > .card .meta,
+.ui.card .meta {
+  font-size: 0.8em;
+}
 
-    section > .ui .form {
-      margin: 3rem;
-    }
+#album_items .ui.cards {
+  margin: 10px;
+}
+
+section > .ui .form {
+  margin: 3rem;
+}
