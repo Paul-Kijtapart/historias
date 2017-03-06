@@ -2,23 +2,58 @@
 layout: default
 category: team
 ---
-<h1>TEAM</h1>
 
-{% for post in site.posts %}
-  {% if post.categories contains page.category %}
-    <div class="ui card">
-      <div class="image">
-        <img src="{{post.picture}}">
-      </div>
-      <div class="content">
-        <a class="header">{{post.name}}</a>
-        <div class="meta">
-          <span class="date">{{post.title}}</span>
-        </div>
-        <div class="description">
-          {{post.description}}
-        </div>
-      </div>
+<h2 class="ui center aligned icon header">
+  <i class="circular users icon"></i>
+  Our team
+</h2>
+
+<section>
+<div id="album_items">
+  <div class="ui cards">
+    {% for post in site.posts %}
+      {% if post.categories contains page.category %}
+          <div class="card">
+            <div class="image">
+              <img src="{{post.picture}}">
+            </div>
+            <div class="content">
+              <a class="header">{{post.name}}</a>
+              <div class="meta">
+                <span class="date">{{post.title}}</span>
+              </div>
+              <div class="description">
+                {{post.description}}
+              </div>
+            </div>
+          </div>
+      {% endif %}
+    {% endfor %}
     </div>
-  {% endif %}
-{% endfor %}
+  </div>
+</section>
+
+<div class="ui divider"></div>
+
+<h2 class="ui center aligned icon header">
+  <i class="circular phone icon"></i>
+  Contact us
+</h2>
+
+<div class="section">
+<form class="ui form">
+  <div class="field">
+    <label>Name</label>
+    <input type="text" name="first-name" placeholder="Your name">
+  </div>
+  <div class="field">
+    <label>Email</label>
+    <input type="text" name="last-name" placeholder="Your email address">
+  </div>
+  <div class="field">
+    <label>Message</label>
+    <textarea></textarea>
+  </div>
+  <button class="ui button" type="submit">Submit</button>
+</form>
+</div>

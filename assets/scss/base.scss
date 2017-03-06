@@ -12,6 +12,7 @@ $susy: (
   math: fluid,
   output: float,
   gutter-position: split,
+  global-box-sizing:border-box,
   debug: (
     image: show,
     color: rgba(red, 0.5),
@@ -20,6 +21,7 @@ $susy: (
   ),
 );
 
+@import "team";
 
 $colorMap: (1: purple, 2: blue, 3: green, 4: yellow);
 
