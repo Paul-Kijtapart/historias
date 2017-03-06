@@ -17,14 +17,20 @@ header {
 
     #introduction {
         clear: both;
-        margin-top: 100px;
+        margin-top: 75px; // TODO: different for different screen
         height: 300px;
-        position: relative;
+        display: table-cell;
+        vertical-align: center;
+        display: flex;
+        justify-content: center;
+
+        @media screen and (max-width: 650px) {
+        	margin-top: 50px;
+        }
 
         h1 {
-            position: absolute;
-            left: span(5 of 12) + gutter(12);
-            top: 25%;
+        	display: inline-block;
+            align-self: center;
         }
     }
 }
