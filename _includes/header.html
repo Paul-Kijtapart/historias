@@ -1,24 +1,25 @@
 {% assign t = site.data.translations[page.lang][page.title] %}
+{% assign nav = site.data.translations[page.lang].nav %}
 
 <div class="ui grid">
     <div class="computer tablet only row">
         <div id="topNav" class="ui fixed menu navbar page grid">
-            <a href="" class="brand item ui small image">
-                <img src="../assets/img/logo.png">
+            <a href="{{nav.home.url}}" class="brand item ui small image">
+                <img src="/assets/img/logo.png">
                 <span class="brandTitle"> Historias </span>
             </a>
             <div class="right menu">
-                <a href="/" class="active item">Home</a>
-                <a href="/products" class="item">Products</a>
-                <a href="/farmers" class="item">Our Farmers</a>
-                <a href="/team" class="item">About Us</a>
+                <a href="{{nav.home.url}}" class="active item">{{nav.home.label}}</a>
+                <a href="{{nav.products.url}}" class="item">{{nav.products.label}}</a>
+                <a href="{{nav.farmers.url}}" class="item">{{nav.farmers.label}}</a>
+                <a href="{{nav.about.url}}" class="item">{{nav.about.label}}</a>
             </div>
         </div>
     </div>
     <div class="mobile only row">
         <div class="ui fixed navbar menu">
-            <a href="" class="brand item ui small image">
-                <img src="../assets/img/logo.png">
+            <a href="{{nav.home.url}}" class="brand item ui small image">
+                <img src="/assets/img/logo.png">
                 <span class="brandTitle"> Historias </span>
             </a>
             <div class="right menu open">
@@ -29,10 +30,10 @@
         </div>
         <div id="mobileTopNav" class="ui vertical navbar menu">
             <div class="menu">
-                <a href="/" class="active item">Home</a>
-                <a href="/products" class="item">Products</a>
-                <a href="/farmers" class="item">Our Farmers</a>
-                <a href="/team" class="item">About Us</a>
+                <a href="{{nav.home.url}}" class="active item">{{nav.home.label}}</a>
+                <a href="{{nav.products.url}}" class="item">{{nav.products.label}}</a>
+                <a href="{{nav.farmers.url}}" class="item">{{nav.farmers.label}}</a>
+                <a href="{{nav.about.url}}" class="item">{{nav.about.label}}</a>
             </div>
         </div>
     </div>

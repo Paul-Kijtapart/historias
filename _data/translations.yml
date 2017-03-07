@@ -1,9 +1,17 @@
 en:
   nav:
-    home: 'Home'
-    products: 'Products'
-    farmers: 'Our farmers'
-    about: 'About us'
+    home:
+      label: 'Home'
+      url: '/en/'
+    products:
+      label: 'Products'
+      url: '/en/products'
+    farmers:
+      label: 'Our farmers'
+      url: '/en/farmers/'
+    about:
+      label: 'About us'
+      url: '/en/about/'
   home:
     title: 'EN_Historias'
   about:
@@ -13,13 +21,32 @@ en:
   farmers:
     title: 'EN_Farmers'
     partners: 'EN_Our partners'
+  team:
+    title: 'Our team'
+  contacts:
+    title: 'Contact us'
+    name: 'Name'
+    name_description: 'Your name'
+    email: 'Email'
+    email_description: 'Your email address'
+    message: 'Message'
+  404:
+    title: '404 NOT FOUND'
 
 es:
   nav:
-    home: 'Inicio'
-    products: 'Productos'
-    farmers: 'Nuestros productores'
-    about: 'Quiénes somos'
+    home:
+      label: 'Inicio'
+      url: '/'
+    products:
+      label: 'Productos'
+      url: '/products/'
+    farmers:
+      label: 'Nuestros productores'
+      url: '/farmers/'
+    about:
+      label: 'Quiénes somos'
+      url: '/about/'
   home:
     title: 'ES_Historias'
   about:
@@ -29,3 +56,12 @@ es:
   farmers:
     title: 'ES_Farmers'
     partners: 'ES_Our partners'
+  team:
+    title: 'ES_Our team'
+  contacts:
+    title: 'ES_Contact us'
+    name: 'ES_Name'
+    name_description: 'ES_Your name'
+    email: 'ES_Email'
+    email_description: 'ES_Your email address'
+    message: 'ES_Message'
