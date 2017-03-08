@@ -7,3 +7,11 @@ $(document).ready(function() {
 
 	$('.ui.dropdown').dropdown();
 });
+
+$('button#back_to_top_btn').on("click", function(e) {
+	e.preventDefault();
+	console.log(e.target);
+	$("html, body").animate({
+		scrollTop: 0
+	}, "slow");
+});

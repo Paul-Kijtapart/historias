@@ -1,15 +1,17 @@
+{% assign nav = site.data.translations[page.lang].nav %}
+
 <button id="back_to_top_btn" class="ui inverted button"> Back to the top </button>
 <div id="bottomNavbar">
-    <ul class="navbarList">
-        <li> Home </li>
-        <li> Products </li>
-        <li> Out Farmers </li>
-        <li> About Us </li>
-    </ul>
+        <a href="{{nav.home.url}}" > {{nav.home.label}} </a>
+        <a href="{{nav.products.url}}"> {{nav.products.label}} </a>
+        <a href="{{nav.farmers.url}}" > {{nav.farmers.label}} </a>
+        <a href="{{nav.about.url}}" >
+        {{nav.about.label}} </a>
+    
 </div>
-<ul class="socialList">
-    <li class="socialListItem"> FB </li>
-    <li class="socialListItem"> LI </li>
-    <li class="socialListItem"> YU </li>
-</ul>
+<div class="socialList">
+    <a class="socialListItem"> FB </a>
+    <a class="socialListItem"> LI </a>
+    <a class="socialListItem"> YU </a>
+</div>
 <div id="license"> Copyright </div>
