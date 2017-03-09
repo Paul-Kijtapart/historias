@@ -15,8 +15,21 @@ prose:
       - name: "title"
         field:
           element: "text"
-          type: "text"
-          placeholder: "post title"
+          label: "Post title"
+          placeholder: "Title of timeline post or position of member (CEO, CFO, etc.)"
+          alterable: true
+      - name: "picture"
+        field:
+          element: "text"
+          label: "Add Image to Post"
+          placeholder: "Image path (relative to /assets/post-images/)"
+          alterable: true
+      - name: "name"
+        field:
+          element: "text"
+          label: "farmer name (optional)"
+          placeholder: "Put farmer name here if it is a farmer post"
+          alterable: true
       - name: "lang"
         field:
           element: "select"
