@@ -21,20 +21,43 @@ prose:
       - name: "picture"
         field:
           element: "text"
-          label: "Add Image to Post"
-          placeholder: "Image path (relative to /assets/post-images/)"
+          label: "[farmer][team] Profile Image"
+          placeholder: "Image path (relative to /assets/img/)"
+          alterable: true
+      - name: "description"
+        field:
+          element: "textarea"
+          label: "[farmer][team] Short description"
+          alterable: true
+      - name: "product"
+        field:
+          element: "text"
+          label: "[farmer] Product"
+          placeholder: "eg. Mangoes"
           alterable: true
       - name: "name"
         field:
           element: "text"
-          label: "farmer name (optional)"
-          placeholder: "Put farmer name here if it is a farmer post"
+          label: "[team] Title or position"
+          placeholder: "eg. CEO, Accountant, Software Developer, etc."
+          alterable: true
+      - name: "icon"
+        field:
+          element: "select"
+          label: "[timeline] icon"
+          options: [{"name": "heart", "value": "heart"}, {"name": "marker", "value": "location"}, {"name": "pen", "value": "sign"}, {"name": "marker", "value": "location"}, {"name": "presentation", "value": "board"}, {"name": "home", "value": "home"}]
+      - name: "time"
+        field:
+          element: "text"
+          label: "[timeline] Time"
+          placeholder: "Eg. Jan 31"
           alterable: true
       - name: "lang"
         field:
           element: "select"
           label: "language"
           options: [{"name": "Spanish", "value": "es"}, {"name": "English", "value": "en"}]
+          value: "es"
       - name: "layout"
         field:
           element: "select"
