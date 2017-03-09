@@ -16,7 +16,7 @@ prose:
         field:
           element: "text"
           label: "Post title"
-          placeholder: "Title of timeline post or position of member (CEO, CFO, etc.)"
+          placeholder: "Title"
           alterable: true
       - name: "picture"
         field:
@@ -40,8 +40,3 @@ prose:
           element: "select"
           label: "post type"
           options: [{"name": "timeline", "value": "post_timeline"}, {"name": "farmer", "value": "post_farmer"}, {"name": "team member", "value": "post_team"}]
-    _posts/static:
-      - name: "date"
-        field:
-          element: "hidden"
-          label: "CURRENT_DATETIME"
