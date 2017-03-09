@@ -27,16 +27,6 @@ prose:
           element: "select"
           label: "post type"
           options: [{"name": "timeline", "value": "post_timeline"}, {"name": "farmer", "value": "post_farmer"}, {"name": "team member", "value": "post_team"}]
-      - name: "tags"
-        field:
-          element: "multiselect"
-          label: "Add Tags"
-          placeholder: "Choose Tags"
-          options:
-            - name: "Apples"
-              value: "apples"
-            - name: "Bananas"
-              value: "bananas"
     _posts/static:
       - name: "date"
         field:
