@@ -15,7 +15,7 @@ permalink: /en/about/
 <div id="album_items">
   <div class="ui cards">
     {% for post in site.posts %}
-      {% if post.categories contains page.category %}
+      {% if post.categories contains "team" %}
           <div class="card">
             <div class="image">
               <img src="/assets/img/{{post.picture}}">

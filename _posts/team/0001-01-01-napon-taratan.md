@@ -1,9 +1,8 @@
 ---
 title: Software Engineer
-layout: post
+layout: post_team
 name: Napon Taratan
 date: 0001-01-01 00:00:00 0000
-categories: team
 picture: vanesa_chang.jpg
 description: Napon ensures the farmers have access to high-speed internet.
 lang: en

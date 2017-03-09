@@ -1,9 +1,8 @@
 ---
-layout: post
+layout: post_farmer
 name: Steve Cheung
 product: Mangoes
 date: 0001-01-01 00:00:00 0000
-categories: farmer
 picture: "santa-rosa.png"
 lang: en
 ---

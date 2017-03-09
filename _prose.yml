@@ -1,0 +1,44 @@
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://historias-web.github.io/'
+  # relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  media: 'assets/img'
+  ignore:
+    - index.md
+    - index.html
+    - en_index.html
+    - _config.yml
+    - /_layouts
+    - /_includes
+  metadata:
+    _posts:
+      - name: "title"
+        field:
+          element: "text"
+          type: "text"
+          placeholder: "post title"
+      - name: "lang"
+        field:
+          element: "select"
+          label: "language"
+          options: [{"name": "Spanish", "value": "es"}, {"name": "English", "value": "en"}]
+      - name: "layout"
+        field:
+          element: "select"
+          label: "post type"
+          options: [{"name": "timeline", "value": "post_timeline"}, {"name": "farmer", "value": "post_farmer"}, {"name": "team member", "value": "post_team"}]
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Apples"
+              value: "apples"
+            - name: "Bananas"
+              value: "bananas"
+    _posts/static:
+      - name: "date"
+        field:
+          element: "hidden"
+          label: "CURRENT_DATETIME"

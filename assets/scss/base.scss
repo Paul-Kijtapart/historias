@@ -12,13 +12,7 @@ $susy: (
   math: fluid,
   output: float,
   gutter-position: split,
-  global-box-sizing:border-box,
-  debug: (
-    image: show,
-    color: rgba(red, 0.5),
-    output: overlay,
-    toggle: top right
-  ),
+  global-box-sizing:border-box
 );
 
 
