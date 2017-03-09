@@ -7,7 +7,7 @@ lang: en
 <div id="timeline-wrapper">
 <section id="cd-timeline" class="cd-container">
   {% for post in site.posts %}
-  {% if post.categories contains "timeline" %}
+  {% if post.layout == "post_timeline" %}
     <div class="cd-timeline-block">
       <div class="cd-timeline-img cd-{{post.icon}}">
         <img src="../assets/img/cd-icon-{{post.icon}}.svg" alt="{{post.icon}}">

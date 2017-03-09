@@ -13,7 +13,7 @@ lang: es
 <div id="album_items">
 <div class="ui cards">
 {% for post in site.posts %}
-  {% if post.categories contains page.category %}
+  {% if post.layout == "post_farmer" %}
     <div class="card">
       <div class="image">
         <img src="/assets/img/{{post.picture}}">
