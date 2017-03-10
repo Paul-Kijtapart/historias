@@ -1,7 +1,7 @@
 ---
-title: CEO
+name: CEO
 layout: post_team
-name: Vanesa Chang
+title: Vanesa Chang
 date: 0001-01-01 00:00:00 0000
 picture: vanesa_chang.jpg
 description: Vanesa oversees our strategy and team to make sure we are doing meaningful, impactful work.
