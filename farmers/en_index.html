@@ -14,7 +14,7 @@ permalink: /en/farmers/
 <div id="album_items">
 <div class="ui cards">
 {% for post in site.posts %}
-  {% if post.layout == "post_farmer" %}
+  {% if post.layout == "post_farmer" and post.lang == "en" %}
     <div class="card">
       <div class="image">
         <img src="/assets/img/{{post.picture}}">
