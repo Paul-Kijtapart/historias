@@ -91,6 +91,16 @@
                 {% else %}
                   <a href="{{nav.about.url}}" class="item">{{nav.about.label}}</a>
                 {% endif %}
+
+                {% if page.lang == "es" %}
+                  <a href="/en{{page.url}}" class="item">
+                    <i class="us flag"></i>
+                  </a>
+                {% else %}
+                  <a href="{{page.url | remove: '/en'}}" class="item">
+                    <i class="es flag"></i>
+                  </a>
+                {% endif %}
             </div>
         </div>
     </div>
