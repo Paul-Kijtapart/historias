@@ -53,8 +53,8 @@ lang: es
 
 <div id="timeline-wrapper">
 <section id="cd-timeline" class="cd-container">
-  {% for post in site.posts %}
-  {% if post.layout == "post_timeline" %}
+  {% for post in site.posts reversed %}
+  {% if post.layout == "post_timeline" and post.lang == "es" %}
     <div class="cd-timeline-block">
       <div class="cd-timeline-img cd-{{post.icon}}">
         <img src="/assets/img/cd-icon-{{post.icon}}.svg" alt="{{post.icon}}">
