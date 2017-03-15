@@ -8,6 +8,25 @@
                 <img src="/assets/img/logo.png">
                 <span class="brandTitle"> Historias </span>
             </a>
+
+            <div class="ui simple dropdown item">
+            {% if page.lang == "es" %}
+              <i class="es flag"></i>
+              <div class="menu">
+                <a href="/en{{page.url}}" class="item">
+                  <i class="us flag"></i>
+                </a>
+              </div>
+            {% else %}
+              <i class="us flag"></i>
+              <div class="menu">
+                <a href="{{page.url | remove: '/en'}}" class="item">
+                  <i class="es flag"></i>
+                </a>
+              </div>
+            {% endif %}
+            </div>
+
             <div class="right menu">
               {% if page.title == "home" %}
                   <a href="{{nav.home.url}}" class="active item">{{nav.home.label}}</a>
@@ -21,13 +40,11 @@
                   <a href="{{nav.products.url}}" class="item">{{nav.products.label}}</a>
               {% endif %}
 
-
               {% if page.title == "farmers" %}
                   <a href="{{nav.farmers.url}}" class="active item">{{nav.farmers.label}}</a>
                {% else %}
                   <a href="{{nav.farmers.url}}" class="item">{{nav.farmers.label}}</a>
               {% endif %}
-
 
               {% if page.title == "about" %}
                   <a href="{{nav.about.url}}" class="active item">{{nav.about.label}}</a>
@@ -63,13 +80,11 @@
                   <a href="{{nav.products.url}}" class="item">{{nav.products.label}}</a>
                 {% endif %}
 
-
                 {% if page.title == "farmers" %}
                   <a href="{{nav.farmers.url}}" class="active item">{{nav.farmers.label}}</a>
                 {% else %}
                   <a href="{{nav.farmers.url}}" class="item">{{nav.farmers.label}}</a>
                 {% endif %}
-
 
                 {% if page.title == "about" %}
                   <a href="{{nav.about.url}}" class="active item">{{nav.about.label}}</a>
