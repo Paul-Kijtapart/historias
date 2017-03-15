@@ -4,13 +4,61 @@ title: home
 permalink: /en/
 lang: en
 ---
+{% assign t = site.data.main_page[page.lang] %}
+
+<div id="main--intro_section" class="ui vertical stripe segment">
+<div class="ui text container">
+  <h3 class="ui header">{{t.intro1_header}}</h3>
+  <p>{{t.intro1_paragraph}}</p>
+  <div class="ui divider"></div>
+  <h3 class="ui header">{{t.intro2_header}}</h3>
+  <p>{{t.intro2_paragraph}}</p>
+  </div>
+</div>
+
+<div id="main--core_values" class="ui inverted vertical stripe quote segment">
+  <div class="ui equal width stackable internally celled grid">
+    <div class="center aligned row">
+      <div class="column">
+        <h3>{{t.main_focus_quote_header}}</h3>
+        <p>{{t.main_focus_quote_paragraph}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="main--ideas_list" class="ui vertical stripe segment">
+  <div class="ui equal width stackable grid">
+    <div class="row">
+      <div class="column">
+        <h3>{{t.idea1_header}}</h3>
+        <p>{{t.idea1_paragraph}}</p>
+      </div>
+      <div class="column">
+        <h3>{{t.idea2_header}}</h3>
+        <p>{{t.idea2_paragraph}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h3>{{t.idea3_header}}</h3>
+        <p>{{t.idea3_paragraph}}</p>
+      </div>
+      <div class="column">
+        <h3>{{t.idea4_header}}</h3>
+        <p>{{t.idea4_paragraph}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div id="timeline-wrapper">
 <section id="cd-timeline" class="cd-container">
   {% for post in site.posts %}
   {% if post.layout == "post_timeline" %}
     <div class="cd-timeline-block">
       <div class="cd-timeline-img cd-{{post.icon}}">
-        <img src="../assets/img/cd-icon-{{post.icon}}.svg" alt="{{post.icon}}">
+        <img src="/assets/img/cd-icon-{{post.icon}}.svg" alt="{{post.icon}}">
       </div> <!-- cd-timeline-img -->
 
       <div class="cd-timeline-content">
@@ -22,6 +70,7 @@ lang: en
     </div> <!-- cd-timeline-block -->
   {% endif %}
   {% endfor %}
-<script src="../assets/js/modernizr.js"></script>
-<script src="../assets/js/main.js"></script>
+</section> <!-- cd-timeline -->
+<script src="assets/js/modernizr.js"></script>
+<script src="assets/js/main.js"></script>
 </div>
