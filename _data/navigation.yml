@@ -3,9 +3,6 @@ en:
     home:
       label: 'Home'
       url: '/en/'
-    products:
-      label: 'Products'
-      url: '/en/products'
     farmers:
       label: 'Our farmers'
       url: '/en/farmers/'
@@ -18,9 +15,6 @@ es:
     home:
       label: 'Inicio'
       url: '/'
-    products:
-      label: 'Productos'
-      url: '/products/'
     farmers:
       label: 'Nuestros productores'
       url: '/farmers/'

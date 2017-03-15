@@ -27,29 +27,15 @@
             </div>
 
             <div class="right menu">
-              {% if page.title == "home" %}
-                  <a href="{{nav.home.url}}" class="active item">{{nav.home.label}}</a>
-               {% else %}
-                  <a href="{{nav.home.url}}" class="item">{{nav.home.label}}</a>
+            {% for menu in nav %}
+              {% assign label = menu[1].label %}
+              {% assign url = menu[1].url %}
+              {% if page.title == menu[0] %}
+              <a class="active item" href="{{url}}">{{label}}</a>
+              {% else %}
+              <a class="item" href="{{url}}">{{label}}</a>
               {% endif %}
-
-              {% if page.title == "products" %}
-                  <a href="{{nav.products.url}}" class="active item">{{nav.products.label}}</a>
-               {% else %}
-                  <a href="{{nav.products.url}}" class="item">{{nav.products.label}}</a>
-              {% endif %}
-
-              {% if page.title == "farmers" %}
-                  <a href="{{nav.farmers.url}}" class="active item">{{nav.farmers.label}}</a>
-               {% else %}
-                  <a href="{{nav.farmers.url}}" class="item">{{nav.farmers.label}}</a>
-              {% endif %}
-
-              {% if page.title == "about" %}
-                  <a href="{{nav.about.url}}" class="active item">{{nav.about.label}}</a>
-               {% else %}
-                  <a href="{{nav.about.url}}" class="item">{{nav.about.label}}</a>
-              {% endif %}
+            {% endfor %}
             </div>
         </div>
     </div>
@@ -67,29 +53,15 @@
         </div>
         <div id="mobileTopNav" class="ui vertical navbar menu">
             <div class="menu">
-                {% if page.title == "home" %}
-                  <a href="{{nav.home.url}}" class="active item">{{nav.home.label}}</a>
-                {% else %}
-                  <a href="{{nav.home.url}}" class="item">{{nav.home.label}}</a>
-                {% endif %}
-
-                {% if page.title == "products" %}
-                  <a href="{{nav.products.url}}" class="active item">{{nav.products.label}}</a>
-                {% else %}
-                  <a href="{{nav.products.url}}" class="item">{{nav.products.label}}</a>
-                {% endif %}
-
-                {% if page.title == "farmers" %}
-                  <a href="{{nav.farmers.url}}" class="active item">{{nav.farmers.label}}</a>
-                {% else %}
-                  <a href="{{nav.farmers.url}}" class="item">{{nav.farmers.label}}</a>
-                {% endif %}
-
-                {% if page.title == "about" %}
-                  <a href="{{nav.about.url}}" class="active item">{{nav.about.label}}</a>
-                {% else %}
-                  <a href="{{nav.about.url}}" class="item">{{nav.about.label}}</a>
-                {% endif %}
+                {% for menu in nav %}
+                  {% assign label = menu[1].label %}
+                  {% assign url = menu[1].url %}
+                  {% if page.title == menu[0] %}
+                  <a class="active item" href="{{url}}">{{label}}</a>
+                  {% else %}
+                  <a class="item" href="{{url}}">{{label}}</a>
+                  {% endif %}
+                {% endfor %}
 
                 {% if page.lang == "es" %}
                   <a href="/en{{page.url}}" class="item">
