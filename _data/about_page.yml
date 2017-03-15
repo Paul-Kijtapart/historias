@@ -1,0 +1,19 @@
+es:
+  about_header: ES_About us
+  contact_header: ES_Contact us
+  contact_form_name_label: ES_Name
+  contact_form_name_placeholder: ES_Your name
+  contact_form_email_label: ES_Email
+  contact_form_email_placeholder: ES_Your email address
+  contact_form_message_label: ES_Message
+  contact_form_submit_button: ES_Submit
+
+en:
+  about_header: About us
+  contact_header: Contact us
+  contact_form_name_label: Name
+  contact_form_name_placeholder: Your name
+  contact_form_email_label: Email
+  contact_form_email_placeholder: Your email address
+  contact_form_message_label: Message
+  contact_form_submit_button: Submit

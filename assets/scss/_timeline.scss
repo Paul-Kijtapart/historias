@@ -72,10 +72,6 @@ Main components
 #cd-timeline {
 	position: relative;
 	padding: 2em 0;
-	margin: {
-		top: 2em;
-		bottom: 2em;
-	}
 
 	&::before {
 		/* this is the vertical line */
@@ -89,11 +85,6 @@ Main components
 	}
 
 	@include MQ(L) {
-		margin: {
-			top: 3em;
-			bottom: 3em;
-		}
-
 		&::before {
 			left: 50%;
 			margin-left: -2px;

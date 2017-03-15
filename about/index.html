@@ -4,10 +4,11 @@ category: team
 title: about
 lang: es
 ---
+{% assign t = site.data.about_page[page.lang] %}
 
 <h2 class="ui center aligned icon header">
   <i class="circular users icon"></i>
-  ES_Our team
+  {{t.about_header}}
 </h2>
 
 <section>
@@ -39,23 +40,23 @@ lang: es
 
 <h2 class="ui center aligned icon header">
   <i class="circular phone icon"></i>
-  Contact us
+  {{t.contact_header}}
 </h2>
 
 <section>
 <form class="ui form">
   <div class="field">
-    <label>Name</label>
-    <input type="text" name="first-name" placeholder="Your name">
+    <label>{{t.contact_form_name_label}}</label>
+    <input type="text" name="first-name" placeholder="{{t.contact_form_name_placeholder}}">
   </div>
   <div class="field">
-    <label>Email</label>
-    <input type="text" name="last-name" placeholder="Your email address">
+    <label>{{t.contact_form_email_label}}</label>
+    <input type="text" name="last-name" placeholder="{{t.contact_form_email_placeholder}}">
   </div>
   <div class="field">
-    <label>Message</label>
+    <label>{{t.contact_form_message_label}}</label>
     <textarea></textarea>
   </div>
-  <button class="ui button" type="submit">Submit</button>
+  <button class="ui button" type="submit">{{t.contact_form_submit_button}}</button>
 </form>
 </section>
