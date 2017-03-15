@@ -1,17 +1,18 @@
 {% assign nav = site.data.translations[page.lang].nav %}
 
-<button id="back_to_top_btn" class="ui inverted button"> Back to the top </button>
+<button id="back_to_top_btn" class="ui inverted button" onclick="back_to_top()"> Back to the top </button>
+
 <div id="bottomNavbar">
         <a href="{{nav.home.url}}" > {{nav.home.label}} </a>
         <a href="{{nav.products.url}}"> {{nav.products.label}} </a>
         <a href="{{nav.farmers.url}}" > {{nav.farmers.label}} </a>
         <a href="{{nav.about.url}}" >
         {{nav.about.label}} </a>
-    
+
 </div>
 <div class="socialList">
-    <a class="socialListItem"> <i class="youtube square icon"></i></a>
-    <a class="socialListItem"><i class="facebook square icon"></i> </a>
-    <a class="socialListItem"><i class="twitter square icon"></i></a>
+    <a class="socialListItem" href="mailto:hola@historias.com.gt"><i class="mail square icon"></i></a>
+    <a class="socialListItem" href="https://www.facebook.com/HistoriasGuatemala"><i class="facebook square icon"></i> </a>
+    <a class="socialListItem" href="https://www.instagram.com/historiasguatemala/"><i class="instagram square icon"></i></a>
 </div>
 <div id="license"> Copyright © Historias 2017 </div>
