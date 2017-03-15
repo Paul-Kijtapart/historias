@@ -53,6 +53,22 @@ $colorMap: (1: purple, 2: blue, 3: green, 4: yellow);
   padding-right: 100px;
 }
 
+@media (max-width: 768px) {
+  #main--ideas_list {
+    padding: 50px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 950px) {
+  #main--ideas_list {
+    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 #timeline-wrapper {
   background-color: whitesmoke;
 }
