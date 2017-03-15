@@ -1,5 +1,7 @@
 // Toggle NavBar
 $(document).ready(function() {
+	this.page = "home";
+
 	$('.right.menu.open').on("click", function(e) {
 		e.preventDefault();
 		$('.ui.vertical.menu').toggle();
