@@ -1,9 +1,5 @@
 header {
-    background: url("../img/main_bg.jpg") no-repeat center center;
-     -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    max-height: 400px;
 
     .topNav {
         height: 75px;
@@ -34,6 +30,11 @@ header {
 
     #introduction {
         clear: both;
+        background: url("../img/main_bg.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
         margin-top: 75px;
         height: 300px;
         display: flex;
@@ -48,6 +49,26 @@ header {
             display: inline-block;
             align-self: center;
             font-size: 48px;
+        }
+    }
+}
+
+header#farmer {
+    #topNav {
+        height: 75px;
+        text-align: center;
+    }
+
+    #farmerIntroduction {
+        color: black;
+        background: none;
+
+        .farmerImagesSlide {
+            overflow: hidden;
+            img {
+                height: 200px;
+                margin: 0 auto;
+            }
         }
     }
 }
