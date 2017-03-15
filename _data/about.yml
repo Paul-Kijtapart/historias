@@ -1,5 +1,6 @@
 es:
-  about_header: ES_About us
+  page_title: ES_About us
+  about_header: ES_Our team
   contact_header: ES_Contact us
   contact_form_name_label: ES_Name
   contact_form_name_placeholder: ES_Your name
@@ -9,7 +10,8 @@ es:
   contact_form_submit_button: ES_Submit
 
 en:
-  about_header: About us
+  page_title: About us
+  about_header: Our team
   contact_header: Contact us
   contact_form_name_label: Name
   contact_form_name_placeholder: Your name

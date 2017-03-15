@@ -4,9 +4,11 @@ category: farmer
 title: farmers
 lang: es
 ---
+{% assign t = site.data.farmers[page.lang] %}
+
 <h2 class="ui center aligned icon header">
   <i class="circular leaf icon"></i>
-  ES_Our Partners
+  {{t.farmers_header}}
 </h2>
 
 <section>

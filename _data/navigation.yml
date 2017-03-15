@@ -1,0 +1,29 @@
+en:
+  nav:
+    home:
+      label: 'Home'
+      url: '/en/'
+    products:
+      label: 'Products'
+      url: '/en/products'
+    farmers:
+      label: 'Our farmers'
+      url: '/en/farmers/'
+    about:
+      label: 'About us'
+      url: '/en/about/'
+
+es:
+  nav:
+    home:
+      label: 'Inicio'
+      url: '/'
+    products:
+      label: 'Productos'
+      url: '/products/'
+    farmers:
+      label: 'Nuestros productores'
+      url: '/farmers/'
+    about:
+      label: 'Quiénes somos'
+      url: '/about/'

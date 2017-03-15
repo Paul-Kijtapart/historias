@@ -1,5 +1,4 @@
-{% assign t = site.data.translations[page.lang][page.title] %}
-{% assign nav = site.data.translations[page.lang].nav %}
+{% assign nav = site.data.navigation[page.lang].nav %}
 
 <div class="ui grid">
     <div class="computer tablet only row">
@@ -106,5 +105,5 @@
     </div>
 </div>
 <div id="introduction">
-  <h1>{{t.title}}</h1>
+  <h1>{{site.data[page.title][page.lang].page_title}}</h1>
 </div>

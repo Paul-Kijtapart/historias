@@ -5,9 +5,11 @@ title: farmers
 lang: en
 permalink: /en/farmers/
 ---
+{% assign t = site.data.farmers[page.lang] %}
+
 <h2 class="ui center aligned icon header">
   <i class="circular leaf icon"></i>
-  EN_Our Partners
+  {{t.farmers_header}}
 </h2>
 
 <section>
