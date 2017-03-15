@@ -5,7 +5,7 @@ $(document).ready(function() {
 			$('.ui.vertical.menu').toggle();
 	});
 
-	$('.ui.dropdown').dropdown();
+	$('.ui.vertical.menu').toggle();
 
 	$('button#back_to_top_btn').on("click", function(e) {
 		e.preventDefault();
