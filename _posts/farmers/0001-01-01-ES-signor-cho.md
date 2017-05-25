@@ -6,9 +6,7 @@ date: 0001-01-01 00:00:00 0000
 picture: "santa-rosa.png"
 lang: es
 images:
- - "bob_lee.png"
  - "santa-rosa.png"
- - "vanesa_chang.jpg"
  - "main_bg.jpg"
 ---
 ES_Donec felis ipsum, accumsan in elit at, accumsan aliquam tortor. Sed quis est vel purus egestas accumsan non vitae felis. Vivamus nibh urna, hendrerit sed arcu vitae, sollicitudin dictum nunc. Ut sed turpis convallis, mollis ex vel, ultricies libero. Aliquam erat volutpat. Duis ut mi molestie, luctus eros nec, tincidunt urna. Mauris massa dui, hendrerit sed dapibus eu, suscipit id neque. Suspendisse rutrum eget lectus nec cursus. Nulla et odio purus. Praesent ut ipsum dignissim metus semper rhoncus. Suspendisse a vestibulum purus. Cras imperdiet scelerisque mauris. Pellentesque egestas odio eget justo finibus pharetra. Curabitur dignissim imperdiet tortor, vitae cursus mauris ultricies sit amet. Vestibulum condimentum vel ligula et egestas. Aliquam id nunc sit amet nisl tincidunt cursus in in libero.

@@ -2,10 +2,14 @@
 <html lang="en">
 {% include head.html %}
 <body>
-  <header> {% include header.html %} </header>
   <div id="main--intro_section" class="ui vertical stripe segment">
     <div class="ui text container">
-      <h3 class="ui header">{{page.title}}</h3>
+      <h1 class="ui header">
+        <div class="content">
+          {{page.title}} <div class="ui pink horizontal label">{{page.product}}</div>
+          <div class="sub header">{{page.description}}</div>
+        </div>
+      </h1>
       {% for image in page.images %}
         <img src="/assets/img/{{image}}">
       {% endfor %}
