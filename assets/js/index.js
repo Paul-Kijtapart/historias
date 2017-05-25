@@ -15,11 +15,15 @@ $(document).ready(function() {
 		}, "slow");
 	});
 
-	$(".farmerImagesSlide").slick({
-		infinite: true,
-		speed: 300,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		dots: true
-	});
+	// $(".farmerImagesSlide").slick({
+	// 	infinite: true,
+	// 	speed: 300,
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	dots: true
+	// });
 });
+
+function back() {
+	window.history.back();
+}

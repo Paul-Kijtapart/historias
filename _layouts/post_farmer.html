@@ -2,9 +2,19 @@
 <html lang="en">
 {% include head.html %}
 <body>
-  <header id="farmer">{% include header_farmer.html %}</header>
-  <h1>{{page.title}}</h1>
-  <p>{{page.content}}</p>
+  <header> {% include header.html %} </header>
+  <div id="main--intro_section" class="ui vertical stripe segment">
+    <div class="ui text container">
+      <h3 class="ui header">{{page.title}}</h3>
+      {% for image in page.images %}
+        <img src="/assets/img/{{image}}">
+      {% endfor %}
+      <p>{{page.content}}</p>
+      <button onclick="back()" class="ui basic button">
+        Back
+      </button>
+    </div>
+  </div>
   <footer id="farmer">{% include footer.html %}</footer>
 </body>
 </html>
