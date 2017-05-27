@@ -46,6 +46,12 @@ prose:
           label: "[farmer] Product"
           placeholder: "eg. Mangoes"
           alterable: true
+      - name: "location"
+        field:
+          element: "text"
+          label: "[farmer] Area of Guatemala"
+          placeholder: "eg. Patzun, Santa Rosa, etc."
+          alterable: true
       - name: "name"
         field:
           element: "text"

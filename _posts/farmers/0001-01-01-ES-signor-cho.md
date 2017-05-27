@@ -5,6 +5,7 @@ product: ES_Cabbage
 date: 0001-01-01 00:00:00 0000
 picture: "santa-rosa.png"
 lang: es
+location: Santa Rosa
 images:
  - "santa-rosa.png"
  - "main_bg.jpg"

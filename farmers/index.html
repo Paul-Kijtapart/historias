@@ -12,7 +12,7 @@ lang: es
 </h2>
 
 <section>
-<div id="album_items">
+<!--<div id="album_items">
 <div class="ui cards">
 {% for post in site.posts %}
   {% if post.layout == "post_farmer" and post.lang == "es" %}
@@ -29,6 +29,19 @@ lang: es
     </div>
   {% endif %}
 {% endfor %}
-</div>
+</div>-->
+<div class="ui three stackable cards">
+  {% for post in site.posts %}
+    {% if post.layout == "post_farmer" and post.lang == "es" %}
+      <div class="farmer-profile card">
+        <a class="image" href="{{post.url}}">
+          <img src="/assets/img/{{post.picture}}" />
+        </a>
+        <div class="img-text-overlay">
+          <a href="{{post.url}}"><button class="farmer-location-overlay big ui inverted button">{{post.location}}</button></a>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
 </div>
 </section>

@@ -71,3 +71,34 @@ $colorMap: (1: purple, 2: blue, 3: green, 4: yellow);
 #timeline-wrapper {
   background-color: whitesmoke;
 }
+
+.ui.cards>.card.farmer-profile {
+  transition: opacity 0.35s;
+  -webkit-transition: opacity 0.35s;
+}
+
+.farmer-profile {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.8;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1.0;
+
+    .ui.inverted.button {
+      background: #fff;
+      box-shadow: 0 0 0 2px #fff inset !important;
+      color: rgba(0, 0, 0, .8)
+    }
+  }
+}
+
+.farmer-location-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 300px;
+}

@@ -4,6 +4,7 @@ title: Steve Cheung
 product: Mangoes
 date: 0001-01-01 00:00:00 0000
 picture: "santa-rosa.png"
+location: Santa Rosa
 lang: en
 images:
  - "santa-rosa.png"
