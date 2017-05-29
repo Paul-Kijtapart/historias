@@ -78,11 +78,8 @@ $colorMap: (1: purple, 2: blue, 3: green, 4: yellow);
 }
 
 .farmer-profile {
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%;
+  height: 400px;
   opacity: 0.8;
-  cursor: pointer;
 
   &:hover {
     opacity: 1.0;
@@ -92,6 +89,17 @@ $colorMap: (1: purple, 2: blue, 3: green, 4: yellow);
       box-shadow: 0 0 0 2px #fff inset !important;
       color: rgba(0, 0, 0, .8)
     }
+  }
+
+  .image-zoom-fit {
+    object-fit: cover;
+    height: 400px !important;
+  }
+
+  .place_holder {
+    background: grey;
+    height: 400px;
+    width: 100%;
   }
 }
 

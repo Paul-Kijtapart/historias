@@ -3,6 +3,11 @@ layout: default
 category: farmer
 title: farmers
 lang: es
+placeholder_areas:
+  - Magdalena Milpas Altas
+  - Zacapa
+  - Chiquimulilla
+  - Tecpan
 ---
 {% assign t = site.data.farmers[page.lang] %}
 
@@ -30,7 +35,33 @@ lang: es
   {% endif %}
 {% endfor %}
 </div>-->
-<div class="ui three stackable cards">
+<div id="album_items">
+<div class="ui cards">
+{% for post in site.posts %}
+  {% if post.layout == "post_farmer" and post.lang == "es" %}
+    <div class="farmer-profile card">
+      <a class="image" href="{{post.url}}">
+          <img class="image-zoom-fit" src="/assets/img/{{post.picture}}" />
+        </a>
+        <div class="img-text-overlay">
+          <a href="{{post.url}}"><button class="farmer-location-overlay big ui inverted button">{{post.location}}</button></a>
+        </div>
+    </div>
+  {% endif %}
+{% endfor %}
+
+{% for area in page.placeholder_areas %}
+  <div class="farmer-profile card">
+    <div class="place_holder">
+    </div>
+    <div class="img-text-overlay">
+      <button class="farmer-location-overlay big ui inverted button disabled">{{area}}</button>
+    </div>
+</div>
+{% endfor %}
+
+</div>
+<!--<div class="ui three stackable cards">
   {% for post in site.posts %}
     {% if post.layout == "post_farmer" and post.lang == "es" %}
       <div class="farmer-profile card">
@@ -43,5 +74,5 @@ lang: es
       </div>
     {% endif %}
   {% endfor %}
-</div>
+</div>-->
 </section>
