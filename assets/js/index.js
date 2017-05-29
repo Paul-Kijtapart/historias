@@ -24,6 +24,10 @@ $(document).ready(function() {
 	// });
 });
 
-function back() {
-	window.history.back();
+function backToFarmers(baseurl, lang) {
+	if (lang == 'en') {
+		window.location.href = baseurl + '/en/farmers';
+	} else {
+		window.location.href = baseurl + '/farmers';
+	}
 }
